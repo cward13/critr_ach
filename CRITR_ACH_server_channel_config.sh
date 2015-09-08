@@ -28,6 +28,6 @@ Server_Remote()
 	MakeAch
 	achd -r pull $SCLIENT_IP $SCLIENT
 }
-gcc Ach_Communication.c -lach -o run_ach
+gcc Ach_Communication_server.c -lach -o run_ach
 MakeAch
 ./run_ach
